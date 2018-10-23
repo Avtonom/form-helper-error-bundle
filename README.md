@@ -32,7 +32,7 @@ Symfony 3.3.15 and translator default disabled in config.
 ``` yaml
 
 framework:
-    translator: true
+    translator: { fallbacks: ['%locale%'] }
             
 ```
 
