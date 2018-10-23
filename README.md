@@ -38,7 +38,9 @@ services:
 ```
 
 ``` php
+
 $this->formErrorHelper->getErrorsAsArray($form)
+
 ```
 
 ### Need Help?
