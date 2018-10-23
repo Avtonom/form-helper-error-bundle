@@ -1,0 +1,6 @@
+services:
+    form.helper.error:
+        class: FormHelper\ErrorBundle\Helper\FormErrorHelper
+        arguments: ["@translator.default"]
+        calls:
+            - [setFormFactory, ["@form.factory"]]
