@@ -27,6 +27,15 @@ $bundles(
 
 #### Use
 
+Symfony 3.3.15 and translator default disabled in config.
+
+``` yaml
+
+framework:
+    translator: true
+            
+```
+
 ``` yaml
 
 services:
