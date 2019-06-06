@@ -12,14 +12,12 @@ class InvalidFormException extends \RuntimeException implements InvalidFormBaseE
     protected $form;
 
     /**
-     * InvalidFormException constructor.
-     *
-     * @param string $message
      * @param FormInterface|null $form
+     * @param string $message|null
      */
-    public function __construct($message, $form = null)
+    public function __construct($form = null, $message = 'Invalid submitted data')
     {
-        parent::__construct($message);
+        parent::__construct($message, 400);
         $this->form = $form;
     }
 
