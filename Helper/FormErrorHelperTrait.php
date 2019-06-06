@@ -1,6 +1,6 @@
 <?php
 
-namespace EShop\TariffBundle\Entity;
+namespace FormHelper\ErrorBundle\Helper;
 
 use FormHelper\ErrorBundle\Helper\FormErrorHelper;
 
