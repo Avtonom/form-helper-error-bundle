@@ -11,7 +11,7 @@ class InvalidFormDataException extends \RuntimeException implements InvalidFormB
 
     /**
      * @param array|null $data
-     * @param string $message|null
+     * @param string|null $message
      */
     public function __construct($data = null, $message = 'Invalid submitted data')
     {
