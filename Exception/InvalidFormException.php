@@ -4,7 +4,7 @@ namespace FormHelper\ErrorBundle\Exception;
 
 use Symfony\Component\Form\FormInterface;
 
-class InvalidFormException extends \RuntimeException implements InvalidFormBaseException
+class InvalidFormException extends \RuntimeException implements InvalidFormBaseException, \JsonSerializable
 {
     /**
      * @var FormInterface|null
