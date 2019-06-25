@@ -82,4 +82,18 @@ class InvalidFormException extends \RuntimeException implements InvalidFormBaseE
     {
         $this->errors = $errors;
     }
+
+    /**
+     * @return array
+     */
+    public function jsonSerialize()
+    {
+        $data = array(
+            'code'         => $this->getCode(),
+            'name'         => $this->getMessage(),
+            'data'         => $this->getData(),
+            'errors'       => $this->getErrors(),
+        );
+        return $data;
+    }
 }
